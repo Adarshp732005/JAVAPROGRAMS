@@ -1,0 +1,22 @@
+package com.adarshjava;
+class Employees_ {
+    int id;
+    String name;
+    static int salary = 10000;
+
+    Employees_(String name , int id) {
+            this.name = name;
+            this.id = id;
+            System.out.println("NAME = " + name + " , ID = " + id + " , Salary = " + salary);
+    }
+   static void salary(){
+       System.out.println(salary++ + salary);
+    }
+}
+public class vedio38 {
+    public static void main(String[] args) {
+        Employees_ e = new Employees_("Abhay",1);
+        Employees_ e1 = new Employees_("Adarsh",2);
+        Employees_.salary();
+    }
+}
